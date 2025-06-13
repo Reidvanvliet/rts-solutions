@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/styleReset.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router";
 import Navbar from './components/Navbar';
 
