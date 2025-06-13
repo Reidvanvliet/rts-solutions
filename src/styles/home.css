@@ -1,0 +1,37 @@
+.main-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+    width: auto;
+    overflow: hidden;
+}
+
+#background-video {
+    height: 1200px;
+    width: auto;
+    filter: brightness(70%);
+    z-index: -1;
+}
+
+.main-banner .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 275px;
+}
+
+.get-started {
+    width: 250px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #354d43;
+    box-shadow: 0px 0px 8px 2px black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(235, 235, 235);
+}
