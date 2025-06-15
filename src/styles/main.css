@@ -2,6 +2,12 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 h1 {
     font-size: 7rem;
     font-family: "Montserrat", sans-serif;
