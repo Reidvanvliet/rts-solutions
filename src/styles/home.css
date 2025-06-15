@@ -42,13 +42,14 @@
 }
 
 .process {
+    display: flex;
     border-bottom: 2px solid rgb(173, 173, 173);
 }
 
 .fade-on-scroll {
     opacity: 0;
     transition: all 1.5s;
-    transform: translate(0, 100px);
+    transform: translate(-100px, 0);
 }
 
 .fade-on-scroll.is-visible {
@@ -67,7 +68,7 @@
 .process-body {
     color: rgb(43, 43, 43);
     padding-top: 5%;
-    display: flex;
+
 }
 
 .list-number {

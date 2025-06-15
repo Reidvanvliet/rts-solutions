@@ -8,12 +8,13 @@ const Process = () => {
       <ol className='process-list'>
         <Fade>
           <li className="process">
-          <h2 className="process-header">Let's Talk</h2>
           <div className="process-body">
+            <h2 className="process-header">Let's Talk</h2>
             <div className="list-number">1</div>
             Have a project in mind? Contact
             our specialist to request an estimate for a project.
           </div>
+          <img src={require("../../media/images/planning.jpg")}/>
         </li>  
         </Fade>
         <Fade>
