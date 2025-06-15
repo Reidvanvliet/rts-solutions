@@ -1,5 +1,4 @@
 const HomeBanner = () => {
-  //document.getElementById('video').play();
 
   return (
     <>

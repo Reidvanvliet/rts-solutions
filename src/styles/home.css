@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 275px;
+    bottom: 300px;
 }
 
 .get-started {
@@ -34,4 +34,55 @@
     font-weight: 700;
     font-size: 1.2rem;
     color: rgb(235, 235, 235);
+}
+
+.main-body {
+    background-color: rgb(245, 245, 245);
+    padding: 0 6%;
+}
+
+.process {
+    border-bottom: 2px solid rgb(173, 173, 173);
+}
+
+.fade-on-scroll {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(0, 100px);
+}
+
+.fade-on-scroll.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.process-header {
+    padding-top: 55px;
+    font-size: 5rem;
+    padding-left: 10%;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+}
+
+.process-body {
+    color: rgb(43, 43, 43);
+    padding-top: 5%;
+    display: flex;
+}
+
+.list-number {
+    font-size: 7rem;
+    margin-left: -3%;
+    margin-top: -100px;
+    padding-right: 8%;
+    font-weight: 900;
+    color: rgb(214, 210, 210);
+    font-family: "Alfa Slab One", serif;
+    border-radius: 50%;
+}
+
+.process-list li {
+    font-size: 2rem;
+    padding-bottom: 55px;
+    line-height: 1.5;
 }
