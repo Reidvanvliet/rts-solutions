@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const Fade = ({ children, threshold = 0.1 }) => {
+const FadeLeft = ({ children, threshold = 0.1 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -32,11 +32,11 @@ const Fade = ({ children, threshold = 0.1 }) => {
   return (
       <div
         ref={ref}
-        className={`fade-on-scroll ${isVisible ? 'is-visible' : ''}`}
+        className={`fade-left ${isVisible ? 'is-visible' : ''}`}
       >
         {children}
       </div>
   );
 };
 
-export default Fade;
+export default FadeLeft;
