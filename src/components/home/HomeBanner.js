@@ -11,7 +11,7 @@ const HomeBanner = () => {
           Your browser does not support the video tag.
         </video>
         <div className="content-container">
-            <h1>Redesign Your Future</h1>
+            <h1>Transform. Create. Elevate.</h1>
                 <button className="get-started">
                     Get Started
                 </button>

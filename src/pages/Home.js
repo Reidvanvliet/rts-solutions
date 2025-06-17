@@ -1,5 +1,6 @@
 import HomeBanner from "../components/home/HomeBanner";
 import Process from "../components/home/Process";
+import ProjectHighlights from "../components/home/ProjectHighlights";
 import "../styles/home.css"
 
 const Home = () => {
@@ -7,6 +8,9 @@ const Home = () => {
         <>
             <HomeBanner />
             <Process />
+            <ProjectHighlights />
+            <ProjectHighlights />
+            <ProjectHighlights />
         </>
     )
 }

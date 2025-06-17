@@ -7,19 +7,19 @@ const Process = () => {
     <div className="main-body">
       <ol className="process-list">
         <FadeLeft>
-          <li className="process">
+          <li className="process process1">
             <div className="list-number left">1</div>
             <div className="process-body">
               <h2 className="process-header">Let's Talk</h2>
               <p>
-                Have a project in mind? Contact our specialist to request an
-                estimate for a project.
+                Have a project in mind? Whether it's a small-scale task or a large, complex project, we’re here to help. Contact our specialist to request an
+                estimate for your project.
               </p>
             </div>
           </li>
         </FadeLeft>
         <FadeRight>
-          <li className="process">
+          <li className="process process2">
             <div className="process-body">
               <h2 className="process-header">Share Your Vision</h2>
               <p>
@@ -32,7 +32,7 @@ const Process = () => {
           </li>
         </FadeRight>
         <FadeLeft>
-          <li className="process">
+          <li className="process process1">
             <div className="list-number left">3</div>
             <div className="process-body">
               <h2 className="process-header">Plan, Plan, Plan</h2>
@@ -45,7 +45,7 @@ const Process = () => {
           </li>
         </FadeLeft>
         <FadeRight>
-          <li className="process">
+          <li className="process process2">
             <div className="process-body">
               <h2 className="process-header">The Real Work</h2>
               <p>
@@ -58,7 +58,7 @@ const Process = () => {
           </li>
         </FadeRight>
         <FadeLeft>
-          <li className="process">
+          <li className="process process1">
             <div className="list-number left">5</div>
             <div className="process-body">
               <h2 className="process-header">Enjoy!</h2>

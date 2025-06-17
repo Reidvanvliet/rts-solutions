@@ -39,6 +39,7 @@
 .main-body {
     background-color: rgb(245, 245, 245);
     overflow: hidden;
+    padding-bottom: 75px;
 }
 
 .process {
@@ -48,7 +49,7 @@
     height: 200px;
     font-size: 1.5rem;
     line-height: 1.5;
-    padding-top: 75px;
+    padding-top: 125px;
 }
 
 .process-header {
@@ -67,13 +68,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 280px;
     height: 100%;
     font-size: 7rem;
     font-weight: 900;
-    color: rgb(214, 210, 210);
+    color: rgb(245, 245, 245);
     font-family: "Alfa Slab One", serif;
     background-color: black;
+    border-radius: 50%;
 }
 
 .left {
@@ -99,4 +101,107 @@
 
 .list-number.right {
     margin-right: 8%;
+}
+
+.image {
+   height: 950px;
+   width: 100%;
+   object-fit: cover;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.slideshow-image {
+    display: flex;
+    overflow: hidden;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border: none;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.next {
+    right: 0;
+}
+
+.dots-container {
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #fdfdfd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.testimonial {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 3%;
+    line-height: 1.25;
+}
+
+.full-project {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    padding: 5px 15px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #354d43;
+    box-shadow: 0px 0px 2px 2px black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(235, 235, 235);
+}
+
+@media only screen and (min-width: 1300px) {
+    .main-body {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .process1 {
+        margin-left: -50px;
+    }
+    
+    .process2 {
+        margin-left: 50px;
+    }
 }
