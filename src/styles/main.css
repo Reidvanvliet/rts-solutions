@@ -1,5 +1,6 @@
 html {
     font-family: "Montserrat", sans-serif;
+    background-color: rgb(245, 245, 245);
 }
 
 h1 {
@@ -7,7 +8,7 @@ h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     text-align: center;
-    color: rgb(235, 235, 235);
+    color: rgb(245, 245, 245);
 }
 
 h2 {
