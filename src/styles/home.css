@@ -142,12 +142,13 @@
 }
 
 .next {
-    right: 3%;
+    right: 2%;
 }
 
 .dots-container {
   position: absolute;
-  left: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   bottom: 0;
   margin-bottom: 10px;
 }

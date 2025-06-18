@@ -68,3 +68,13 @@ h2 {
     background-color: #354d43;
     color: rgb(235, 235, 235);
 }
+
+.navlink {
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+}
+
+.active-navlink {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}

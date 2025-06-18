@@ -1,4 +1,5 @@
-import { Outlet } from "react-router";
+import { Outlet, NavLink } from "react-router";
+import Footer from "./Footer";
 
 const Navbar = () => {
   return (
@@ -15,14 +16,14 @@ const Navbar = () => {
 
         <div className="nav-container">
           <ul>
-            <li>Home</li>
+            <li><NavLink to="/" className={(isActive) =>  isActive ? 'active-navlink' : 'navlink'}>Home</NavLink></li>
             <li>Projects</li>
             <li id="nav-contact">Contact</li>
           </ul>
         </div>
       </div>
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
