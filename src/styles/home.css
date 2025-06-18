@@ -37,7 +37,7 @@
 }
 
 .main-body {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(31, 31, 31);
     overflow: hidden;
     padding-bottom: 75px;
 }
@@ -55,13 +55,13 @@
 .process-header {
     font-size: 3rem;
     font-weight: 800;
-    color: rgb(0, 0, 0);
+    color: rgb(245, 245, 245);
 }
 
 .process-body {
     width: 70%;
     padding: 8%;
-    color: rgb(43, 43, 43);
+    color: rgb(185, 185, 185);
 }
 
 .list-number {
@@ -72,9 +72,9 @@
     height: 100%;
     font-size: 7rem;
     font-weight: 900;
-    color: rgb(245, 245, 245);
+    color: rgb(31, 31, 31);
     font-family: "Alfa Slab One", serif;
-    background-color: black;
+    background-color: rgb(245, 245, 245);
     border-radius: 50%;
 }
 
@@ -111,13 +111,15 @@
 
 .slideshow-container {
     position: relative;
-    width: 100%;
-    border-bottom: 3px solid black;
+    width: 96%;
+    padding: 2% 2% 0 2%;
+    background-color: rgb(245, 245, 245);
 }
 
 .slideshow-image {
     display: flex;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .prev,
@@ -136,10 +138,11 @@
   user-select: none;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 10;
+  border-radius: 5px;
 }
 
 .next {
-    right: 0;
+    right: 3%;
 }
 
 .dots-container {
@@ -189,6 +192,59 @@
     font-weight: 700;
     font-size: 1.2rem;
     color: rgb(235, 235, 235);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 4rem;
+  gap: 8rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  max-height: 900px;
+  min-height: 650px;
+  background-color: rgb(245, 245, 245);
+}
+
+.about .body {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1.5rem;
+}
+
+.about .body h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.about .body p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.about .house {
+  flex: 1;
+  min-width: 300px;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1300px) {
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .about .image {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 1300px) {

@@ -13,7 +13,7 @@ const Process = () => {
               <h2 className="process-header">Let's Talk</h2>
               <p>
                 Have a project in mind? Whether it's a small-scale task or a large, complex project, we’re here to help. Contact our specialist to request an
-                estimate for your project.
+                estimate.
               </p>
             </div>
           </li>
