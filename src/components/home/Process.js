@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import ScrollAnimation from "./ScrollAnimation";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 const Process = () => {
 

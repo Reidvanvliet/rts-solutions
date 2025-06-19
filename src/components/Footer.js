@@ -1,5 +1,6 @@
 import "../styles/footer.css";
 import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -18,8 +19,8 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#">Back to Top</a></li>
-            <li><a href="#services">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 

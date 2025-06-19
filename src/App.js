@@ -3,12 +3,15 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Navbar/>} >
     <Route path="/" element={<Home/>} />
     <Route path="/projects" element={<Projects />} />
+    <Route path="/contact" element={<Contact />} />
+    {/* Add more routes as needed */}
   </Route>
 ))
 

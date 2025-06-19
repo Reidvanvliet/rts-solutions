@@ -1,16 +1,14 @@
 import { useState, useEffect, useRef } from "react";
+import { HiOutlineExternalLink, HiOutlineX } from "react-icons/hi";
+import { useLocation, Link } from "react-router";
 
-const ProjectHighlights = () => {
+
+const ProjectHighlights = ({ images, stars, projectBody }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [testimonialOn, setTestimonialOn] = useState(true);
   const pauseUntilRef = useRef(null);
   const intervalRef = useRef(null);
-
-  const images = [
-    require("../../media/images/homeInterior1.jpg"),
-    require("../../media/images/homeInterior2.jpg"),
-    require("../../media/images/homeInterior3.jpg"),
-    require("../../media/images/homeInterior4.jpg"),
-  ];
+  const { pathname } = useLocation();
 
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -62,17 +60,14 @@ const ProjectHighlights = () => {
         ))}
       </div>
 
-      <div className="testimonial">
-        ⭐⭐⭐⭐⭐
-        <br/><br/>
-        “We couldn’t be happier with the transformation of our home.
-        What was once outdated and cramped is now open, bright, and exactly what
-        we dreamed of. The team was professional, communicative, and truly
-        listened to what we wanted. Every detail — from the new flooring to the
-        custom cabinetry — was executed flawlessly. It feels like we’re living
-        in a brand new house!” – Sarah & Mark T.
+      <div className={testimonialOn ? "testimonial" : "testimonial testimonial-hidden"}>
+        <button className="close-testimonial" onClick={() => setTestimonialOn(!testimonialOn)}><HiOutlineX /></button>
+        {stars ? <div>{stars}<br/><br/></div> : null}
+        {projectBody}
       </div>
-      <button className="full-project">Visit Project</button>
+      <Link to='/projects'><button className={pathname === '/' ? "full-project" : "hidden"}>Visit Projects</button></Link>
+      
+      <button className={testimonialOn ? "hidden" : "open-testimonial"} onClick={() => setTestimonialOn(!testimonialOn)}><HiOutlineExternalLink /></button>
     </div>
   );
 };

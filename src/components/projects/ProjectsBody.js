@@ -1,18 +1,21 @@
 import ProjectHighlights from "../home/ProjectHighlights";
+import { projects } from "../../data";
 
 const PojectsBody = () => {
     return (
         <div className="projects-container">
-            <h2 className="title">Full Home Renovation</h2>
-            <ProjectHighlights />
-            <h2 className="title">Suite Conversion</h2>
-            <ProjectHighlights />
-            <h2 className="title">Bathroom Remodeling</h2>
-            <ProjectHighlights />
-            <h2 className="title">Exterior Remodeling</h2>
-            <ProjectHighlights />
-            <h2 className="title">Kitchen Remodeling</h2>
-            <ProjectHighlights />
+            {projects.map((project, index) =>
+            <>
+                <h2 className="title" >{project.type}</h2>
+                <ProjectHighlights 
+                    key={index}
+                    images={project.images} 
+                    stars={project.stars} 
+                    projectBody={project.projectBody} 
+                    projectType={project.projectType} 
+                />
+            </>
+             )}
         </div>
     );
 }

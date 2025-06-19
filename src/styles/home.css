@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 300px;
+    bottom: 350px;
     padding: 0 50px;
 }
 
@@ -152,6 +152,9 @@
 }
 
 .testimonial {
+  opacity: 1;
+  scale: 1;
+  transform-origin: left center;
     color: white;
     position: absolute;
     top: 50%;
@@ -159,14 +162,58 @@
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.493);
-    padding: 3%;
+    padding: 50px;
     line-height: 1.25;
     border-radius: 10px;
+    max-width: 500px;
+  transition: transform 0.6s, opacity 1.5s, scale 1s;
+}
+
+.close-testimonial {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.479);
+}
+
+.close-testimonial:hover {
+  cursor: pointer;
+  color: rgb(119, 119, 119);
+}
+
+.open-testimonial {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  bottom: 10px;
+  left: 15px;
+}
+
+.open-testimonial:hover {
+  cursor: pointer;
+  color: rgb(119, 119, 119);
+}
+
+.testimonial-hidden {
+  opacity: 0;
+  scale: .25;
+  position: absolute;
+  transform: translate(-400%, 175%);
+  transition: transform 1s, opacity 1s;
+}
+
+.hidden {
+  display: none;
 }
 
 .full-project {
     position: absolute;
-    top: 70%;
+    bottom: 10%;
     left: 50%;
     padding: 5px 15px;
     transform: translate(-50%, -50%);
@@ -178,6 +225,11 @@
     color: rgb(235, 235, 235);
     box-shadow: 0px 0px 5px 2px black;
     border: 1px solid rgba(0, 0, 0, 0.623);
+}
+
+.full-project:hover {
+    background-color: #2b3c32;
+    cursor: pointer;
 }
 
 .about {
@@ -218,7 +270,7 @@
   object-fit: contain;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1680px) {
   .about {
     flex-direction: column-reverse;
     text-align: center;
@@ -228,6 +280,10 @@
   .about .image {
     max-width: 100%;
   }
+
+  .main-banner .content-container {
+        bottom: 250px;
+     }
 }
 
 @media only screen and (min-width: 1300px) {
