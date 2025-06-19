@@ -1,7 +1,15 @@
-import { Outlet, NavLink } from "react-router";
+import { useEffect } from "react";
+import { Outlet, NavLink, useLocation } from "react-router";
 import Footer from "./Footer";
 
 const Navbar = () => {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to the top-left corner
+      }, [pathname]);
+
   return (
     <>
       <div className="main-nav-container">
