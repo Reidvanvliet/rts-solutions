@@ -15,7 +15,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="footer-section links">
-          <h4>Quick Links</h4>
+          <h3>Quick Links</h3>
           <ul>
             <li><a href="#">Back to Top</a></li>
             <li><a href="#services">Projects</a></li>
@@ -25,7 +25,7 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="footer-section contact">
-          <h4>Get in Touch</h4>
+          <h3>Get in Touch</h3>
           {/*<p><FaPhoneAlt className="icon" /> (123) 456-7890</p>*/}
           <p><FaEnvelope className="icon" />RtsSolutions@gmail.com</p>
           <div className="footer-socials">
