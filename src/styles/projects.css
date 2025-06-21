@@ -1,6 +1,4 @@
-.projects-banner {
-    margin-bottom: 2%;
-}
+
 
 .projects-banner-image {
     width: 100%;
@@ -19,8 +17,10 @@
 
 .title {
     text-align: center;
+    margin-bottom: 2%;
+    color: rgb(31, 31, 31);
 }
 
 .projects-container {
-    padding-top: 75px;
+    margin-top: 5rem;
 }

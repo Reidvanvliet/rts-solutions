@@ -30,9 +30,11 @@ const Footer = () => {
           {/*<p><FaPhoneAlt className="icon" /> (123) 456-7890</p>*/}
           <p><FaEnvelope className="icon" />RtsSolutions@gmail.com</p>
           <div className="footer-socials">
-            <a href="https://www.facebook.com/rtssolutionsltd"><FaFacebookF /></a>
-            <a href="https://www.instagram.com/"><FaInstagram /></a>
+            <a href="https://www.facebook.com/rtssolutionsltd" target="_blank"><FaFacebookF />
+            <span>RTS Solutions</span></a>
           </div>
+          <p className="footer-socials days">Monday - Friday</p>
+          <p className="footer-socials">8:00 AM - 5:00 PM</p>
         </div>
       </div>
 
