@@ -41,7 +41,7 @@
 }
 
 .footer-section li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .footer-section a {
@@ -55,7 +55,6 @@
 
 .footer-socials {
   gap: 15px;
-  margin-top: 10px;
 }
 
 .footer-socials a {
@@ -84,6 +83,6 @@
 }
 
 .days {
-  padding-top: 20px;
+  margin-top: 10px;
   font-weight: 700;
  }
