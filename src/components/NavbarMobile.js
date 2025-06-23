@@ -22,7 +22,7 @@ const NavbarMobile = ({ setIsOpen }) => {
             </li>
           </ul>
             <button
-                className="close-button"
+                className="close-button-mobile"
                 onClick={() => setIsOpen(false)}
                 aria-label="Close navigation"
             >
