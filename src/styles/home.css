@@ -7,6 +7,16 @@
     width: auto;
     overflow: hidden;
     margin: 0;
+    animation: slidein 1s;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #background-video {
