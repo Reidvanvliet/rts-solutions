@@ -1,0 +1,58 @@
+.form-success-container {
+  position: fixed;
+  top: 20%;
+  width: 50%;
+  background-color: rgb(44, 44, 44);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 3rem;
+  margin: 2rem 0;
+  text-align: center;
+  color: rgb(245, 245, 245);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  z-index: 5;
+}
+
+.form-success-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.form-success-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.close-button {
+  position: absolute;
+  right: 20px;
+  top: -85%;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(245, 245, 245);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-button:hover {
+  color: #ff5a5f;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .form-success-container {
+    width: 70%;
+  }
+ }

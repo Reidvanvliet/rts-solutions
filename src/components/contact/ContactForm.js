@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import FormSuccessMessage from "./FormSuccessMessage";
 
 const ContactForm = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     lastName: "",
     firstName: "",
@@ -17,7 +19,7 @@ const ContactForm = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     setFormData({
@@ -30,75 +32,102 @@ const ContactForm = () => {
       projectAddress: "",
       projectDetails: "",
     });
+
+    try {
+      const response = await fetch("https://formsubmit.co/reidvanvliet6596@gmail.com", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true); // or any success logic
+      } else {
+        alert("❌ Contact form submission failed! Please try again.")
+        console.error("Form submission failed:", await response.text());
+      }
+    } catch (err) {
+      console.error("Error submitting form:", err);
+    }
   };
 
   return (
-    <div className="form-container">
-      <h2 className="form-heading">Contact Form</h2>
-      <form onSubmit={handleSubmit} className="project-form">
-        {[
-          ["Last Name", "lastName"],
-          ["First Name", "firstName"],
-          ["Company Name", "companyName"],
-          ["Billable Address", "billableAddress"],
-          ["Phone", "phone"],
-          ["Email", "email"],
-          ["Project Address (if different)", "projectAddress"],
-        ].map(([label, name]) => (
-          <div key={name}>
-            <label htmlFor={name} className="form-label">
-              {label}
-            </label>
-            <input
-              type={
-                name === "email" ? "email" : "text"
-              }
-              id={name}
-              name={name}
-              value={formData[name]}
-              onChange={handleChange}
-              required={[
-                "lastName",
-                "firstName",
-                "billableAddress",
-                "phone",
-                "email",
-              ].includes(name)}
-              className="form-input"
-              pattern={
-                name === "phone"
-                  ? "\\(?\\d{3}\\)?-?.?\\s?\\d{3}-?.?\\s?\\d{4}"
-                  : name === "email"
-                  ? "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
-                  : undefined
-              }
-              title={
-                name === "phone"
-                  ? "Please enter a valid phone number (e.g. 250 918 9388)"
-                  : name === "email"
-                  ? "Please enter a valid email address"
-                  : undefined
-              }
-            />
-          </div>
-        ))}
+    <>
+      <div className="form-container">
+        <h2 className="form-heading">Contact Form</h2>
+        <form
+          onSubmit={handleSubmit}
+          className="project-form"
+          action="https://formsubmit.co/reidvanvliet6596@gmail.com"
+          method="POST"
+        >
+          {[
+            ["Last Name", "lastName"],
+            ["First Name", "firstName"],
+            ["Company Name", "companyName"],
+            ["Billable Address", "billableAddress"],
+            ["Phone", "phone"],
+            ["Email", "email"],
+            ["Project Address (if different)", "projectAddress"],
+          ].map(([label, name]) => (
+            <div key={name}>
+              <label htmlFor={name} className="form-label">
+                {label}
+              </label>
+              <input
+                type={name === "email" ? "email" : "text"}
+                id={name}
+                name={name}
+                value={formData[name]}
+                onChange={handleChange}
+                required={[
+                  "lastName",
+                  "firstName",
+                  "billableAddress",
+                  "phone",
+                  "email",
+                ].includes(name)}
+                className="form-input"
+                pattern={
+                  name === "phone"
+                    ? "\\(?\\d{3}\\)?-?.?\\s?\\d{3}-?.?\\s?\\d{4}"
+                    : name === "email"
+                    ? "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+                    : undefined
+                }
+                title={
+                  name === "phone"
+                    ? "Please enter a valid phone number (e.g. 250 918 9388)"
+                    : name === "email"
+                    ? "Please enter a valid email address"
+                    : undefined
+                }
+              />
+            </div>
+          ))}
 
-        <label htmlFor="projectDetails" className="form-label">
-          Project Details or Additional Info
-        </label>
-        <textarea
-          id="projectDetails"
-          name="projectDetails"
-          value={formData.projectDetails}
-          onChange={handleChange}
-          className="form-textarea"
-        />
+          <label htmlFor="projectDetails" className="form-label">
+            Project Details or Additional Info
+          </label>
+          <textarea
+            id="projectDetails"
+            name="projectDetails"
+            value={formData.projectDetails}
+            onChange={handleChange}
+            className="form-textarea"
+          />
 
-        <button type="submit" className="form-button">
-          Submit
-        </button>
-      </form>
-    </div>
+          <button type="submit" className="form-button">
+            Submit
+          </button>
+        </form>
+      </div>
+      {isSubmitted && (
+        <FormSuccessMessage onClose={() => setIsSubmitted(false)} />
+      )}
+    </>
   );
 };
 
