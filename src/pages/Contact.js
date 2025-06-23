@@ -16,7 +16,7 @@ const Contact = () => {
                 
                 <div className="contact-container">
                 <ContactForm />
-                <img className="image-container" src={require('../media/images/contact-page.jpg')} />
+                <img className="image-container" src={require('../media/images/contact-page.webp')} />
                 </div>
             </div>
         </div>

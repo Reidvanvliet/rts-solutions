@@ -5,7 +5,7 @@ const HomeBanner = () => {
   return (
     <>
       <div className="main-banner">
-        <video id="background-video" autoPlay poster={require('../../media/images/homepage-frame.jpg')}  loop muted>
+        <video id="background-video" autoPlay poster={require('../../media/images/homepage-frame.webp')}  loop muted>
           <source
             src={require("../../media/videos/homes1.mp4")}
             type="video/mp4"
