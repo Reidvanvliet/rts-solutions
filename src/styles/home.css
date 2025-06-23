@@ -97,7 +97,7 @@
 .image {
    height: 80vh;
    width: 100%;
-   object-fit: cover;
+   
 }
 
 .slideshow-container {
@@ -108,7 +108,6 @@
 }
 
 .slideshow-image {
-    display: flex;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -328,7 +327,17 @@
     background-color: rgb(245, 245, 245);
   }
 
-  .slideshow-image {
-    border-radius: 0;
+  .image {
+    width: auto;
   }
+
+  .slideshow-image {
+    display: flex;
+    border-radius: 0;
+    overflow: scroll;
+  }
+
+  .slideshow-image::-webkit-scrollbar {
+    display: none;
+}
 }

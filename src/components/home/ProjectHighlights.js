@@ -39,7 +39,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
 
   return (
     <div className="slideshow-container">
-      <div className="slideshow-image">
+      <div  className="slideshow-image">
         <img className="image" src={images[currentIndex]} />
       </div>
 
