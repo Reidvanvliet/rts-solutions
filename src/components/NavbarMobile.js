@@ -4,6 +4,7 @@ const NavbarMobile = ({ setIsOpen }) => {
     return (
         <>
           <ul>
+            <li id='list-header'>RTS Solutions</li>
             <li>
               <NavLink to="/" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
                 Home

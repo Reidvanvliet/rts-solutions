@@ -3,11 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 950px;
+    height: 100vh;
     width: auto;
     overflow: hidden;
-    margin: 1rem;
-    border-radius: 20px;
+    margin: 0;
 }
 
 #background-video {
@@ -96,7 +95,7 @@
 }
 
 .image {
-   height: 800px;
+   height: 80vh;
    width: 100%;
    object-fit: cover;
 }
@@ -175,7 +174,7 @@
     line-height: 1.25;
     border-radius: 10px;
     max-width: 500px;
-    min-width: 250px;
+    min-width: 225px;
   transition: opacity 1.5s, scale 1s;
 }
 
@@ -276,7 +275,7 @@
 .house {
   box-sizing: border-box;
   flex: 1;
-  min-width: 500px;
+  min-width: 400px;
   max-width: 700px;
   width: 100%;
   height: auto;
@@ -304,6 +303,7 @@
   }
 
   .process {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,5 +318,17 @@
   .process-body {
     position: absolute;
     z-index: 2;
+    overflow: hidden;
+  }
+
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    margin: 0 0 75px 0;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .slideshow-image {
+    border-radius: 0;
   }
 }
