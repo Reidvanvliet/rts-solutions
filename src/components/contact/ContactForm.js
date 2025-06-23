@@ -35,18 +35,16 @@ const ContactForm = () => {
     });
 
     try {
-      const response = await fetch("https://formsubmit.co/reidvanvliet6596@gmail.com", {
+      const response = await fetch("/", {
         method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
       });
 
       if (response.ok) {
         setIsSubmitted(true); // or any success logic
       } else {
-        alert("❌ Contact form submission failed! Please try again.")
+        alert("❌ Contact form submission failed! Please try again.");
         console.error("Form submission failed:", await response.text());
       }
     } catch (err) {
@@ -63,9 +61,11 @@ const ContactForm = () => {
         <form
           onSubmit={handleSubmit}
           className="project-form"
-          action="https://formsubmit.co/reidvanvliet6596@gmail.com"
+          data-netlify="true"
           method="POST"
+          name="contact"
         >
+          <input type="hidden" name="contact" value="contact" />
           {[
             ["Last Name", "lastName"],
             ["First Name", "firstName"],
