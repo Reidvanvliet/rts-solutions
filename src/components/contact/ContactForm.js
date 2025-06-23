@@ -51,6 +51,7 @@ const ContactForm = () => {
       <div className="form-container">
         <h2 className="form-heading">Contact Form</h2>
         <form
+          onSubmit={handleSubmit}
           className="project-form"
           name="contact"
           method="POST"
