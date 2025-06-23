@@ -23,22 +23,14 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setFormData({
-      lastName: "",
-      firstName: "",
-      companyName: "",
-      billableAddress: "",
-      phone: "",
-      email: "",
-      projectAddress: "",
-      projectDetails: "",
-    });
+
+    const encoded = new URLSearchParams(formData).toString();
 
     try {
       const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
+        body: encoded,
       });
 
       if (response.ok) {
@@ -61,11 +53,8 @@ const ContactForm = () => {
         <form
           onSubmit={handleSubmit}
           className="project-form"
-          method="POST"
           name="contact"
-          data-netlify="true"
         >
-          <input type="hidden" name="form-name" value="contact" />
           {[
             ["Last Name", "lastName"],
             ["First Name", "firstName"],
