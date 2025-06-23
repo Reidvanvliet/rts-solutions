@@ -32,7 +32,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
       if (!pauseUntilRef.current || now >= pauseUntilRef.current) {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       }
-    }, 5000); // advance every 5s
+    }, 10000); // advance every 5s
 
     return () => clearInterval(intervalRef.current); // cleanup
   }, []);
