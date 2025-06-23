@@ -51,10 +51,9 @@ const ContactForm = () => {
       <div className="form-container">
         <h2 className="form-heading">Contact Form</h2>
         <form
-          onSubmit={handleSubmit}
           className="project-form"
           name="contact"
-          data-netlify="true"
+          method="POST"
         >
           <input type="hidden" name="form-name" value="contact" />
           {[
