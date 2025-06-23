@@ -8,6 +8,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
   const [testimonialOn, setTestimonialOn] = useState(true);
   const pauseUntilRef = useRef(null);
   const intervalRef = useRef(null);
+  const scrollRef  = useRef(null);
   const { pathname } = useLocation();
 
   const goToNextSlide = () => {
@@ -33,13 +34,19 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       }
     }, 10000); // advance every 5s
+    
+    if (scrollRef.current) {
+        const { scrollWidth, clientWidth } = scrollRef.current;
+        const middleScrollPosition = (scrollWidth - clientWidth) / 2;
+        scrollRef.current.scrollLeft = middleScrollPosition;
+      }
 
     return () => clearInterval(intervalRef.current); // cleanup
   }, []);
 
   return (
     <div className="slideshow-container">
-      <div  className="slideshow-image">
+      <div ref={scrollRef} className="slideshow-image">
         <img className="image" src={images[currentIndex]} />
       </div>
 
