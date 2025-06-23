@@ -5,6 +5,7 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
+    access_key: "d9da6a0a-d340-4d4c-acfa-f1769089b37b",
     lastName: "",
     firstName: "",
     companyName: "",
@@ -24,17 +25,26 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const encoded = new URLSearchParams(formData).toString();
-
     try {
-      const response = await fetch('/.netlify/functions/submit-form', {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encoded,
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "post",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         setIsSubmitted(true); // or any success logic
+        setFormData({
+          access_key: "d9da6a0a-d340-4d4c-acfa-f1769089b37b",
+          lastName: "",
+          firstName: "",
+          companyName: "",
+          billableAddress: "",
+          phone: "",
+          email: "",
+          projectAddress: "",
+          projectDetails: "",
+        });
       } else {
         alert("❌ Contact form submission failed! Please try again.");
         console.error("Form submission failed:", await response.text());
@@ -50,13 +60,12 @@ const ContactForm = () => {
     <>
       <div className="form-container">
         <h2 className="form-heading">Contact Form</h2>
-        <form
-          onSubmit={handleSubmit}
-          className="project-form"
-          name="contact"
-          method="POST"
-        >
-          <input type="hidden" name="form-name" value="contact" />
+        <form onSubmit={handleSubmit} className="project-form" name="contact">
+          <input
+            type="hidden"
+            name="access_key"
+            value="d9da6a0a-d340-4d4c-acfa-f1769089b37b"
+          ></input>
           {[
             ["Last Name", "lastName"],
             ["First Name", "firstName"],
