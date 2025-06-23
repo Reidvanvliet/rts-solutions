@@ -3,6 +3,7 @@ import FormSuccessMessage from "./FormSuccessMessage";
 
 const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     lastName: "",
     firstName: "",
@@ -21,7 +22,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
     setFormData({
       lastName: "",
       firstName: "",
@@ -50,6 +51,8 @@ const ContactForm = () => {
       }
     } catch (err) {
       console.error("Error submitting form:", err);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -120,7 +123,7 @@ const ContactForm = () => {
           />
 
           <button type="submit" className="form-button">
-            Submit
+            {isSubmitting ? <span className="spinner"></span> : "Submit"}
           </button>
         </form>
       </div>
