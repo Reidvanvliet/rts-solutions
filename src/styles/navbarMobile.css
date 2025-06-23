@@ -1,0 +1,96 @@
+.hamburger {
+  display: none;
+  position: fixed;
+  right: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: none;
+  color: rgb(31, 31, 31);
+  box-shadow: 0px 0px 3px 1px rgb(31, 31, 31);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 4px 10px 4px 10px;
+  margin: 20px 10% 0 0;
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hamburger.open {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-container-mobile {
+    box-sizing: border-box;
+    position: fixed;
+    background-color: rgb(44, 44, 44);
+    width: 95%;
+    height: 300px;
+    border-radius: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    box-shadow: 0px 0px 5px 5px black;
+    border: 3px solid rgb(39, 39, 39);
+}
+
+/* Fade-in state */
+.nav-container-mobile.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Fade-out just means not "open" */
+.nav-container-mobile.closed {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-container-mobile ul {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-container-mobile li {
+    text-align: center;
+    width: 100px;
+    padding: 18px 10px;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.164);
+    color:rgb(235, 235, 235);
+}
+
+.close-button {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 1.15rem;
+    background: none;
+    border: none;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+.active-navlink-mobile {
+    font-weight: 800;
+}
+
+
+@media only screen and (max-width: 700px) {
+  #nav-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

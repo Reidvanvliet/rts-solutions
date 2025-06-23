@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 const HomeBanner = () => {
 
   return (
@@ -12,9 +14,11 @@ const HomeBanner = () => {
         </video>
         <div className="content-container">
             <h1>Transform. Create. Elevate.</h1>
+            <Link to="/contact">
                 <button className="get-started">
                     Get Started
                 </button>
+              </Link>
         </div>
       </div>
     </>

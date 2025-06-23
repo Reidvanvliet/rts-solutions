@@ -48,7 +48,7 @@ const Process = () => {
             </ScrollAnimation>
             <ScrollAnimation divName="list-number" identifier="numberFour" side="right">4</ScrollAnimation>
           </div>
-          <div className="process">
+          <div className="process" id="process-five">
             <ScrollAnimation divName="list-number" identifier="numberFive" side="left">5</ScrollAnimation>
             <ScrollAnimation divName="process-body" identifier="bodyFive" side="right">
               <h2 className="process-header">Enjoy!</h2>

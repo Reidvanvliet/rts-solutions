@@ -19,17 +19,17 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Form submitted:", formData);
-    // setFormData({
-    //   lastName: "",
-    //   firstName: "",
-    //   companyName: "",
-    //   billableAddress: "",
-    //   phone: "",
-    //   email: "",
-    //   projectAddress: "",
-    //   projectDetails: "",
-    // });
+    console.log("Form submitted:", formData);
+    setFormData({
+      lastName: "",
+      firstName: "",
+      companyName: "",
+      billableAddress: "",
+      phone: "",
+      email: "",
+      projectAddress: "",
+      projectDetails: "",
+    });
   };
 
   return (

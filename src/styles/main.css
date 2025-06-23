@@ -1,4 +1,4 @@
-html {
+html, button {
     font-family: "Montserrat", sans-serif;
     background-color: rgb(245, 245, 245);
     line-height: 1.25;
@@ -6,20 +6,21 @@ html {
 
 p {
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     text-align: center;
     color: rgb(245, 245, 245);
     text-shadow: 0 0 15px black;
+    line-height: 1.25;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     line-height: 1.5;
@@ -42,12 +43,7 @@ h3 {
 .logo-container {
     display: flex;
     align-items: center;
-    margin: 25px 0 0 15px;
-    padding: 0 25px 0 25px;
-}
-
-.logo-container h2 {
-  text-shadow: -1px -1px 0 #bbbbbb, 1px -1px 0 #bbb, -1px 1px 0 #bbb, 1px 1px 0 #bbb;
+    margin: 25px 0 0 60px;
 }
 
 .logo-container img{
@@ -94,7 +90,6 @@ h3 {
 .nav-contact-active {
     background-color: #2a3b2e;
     color: rgb(255, 255, 255);
-    font-weight: 800;
 }
 
 .navlink {
@@ -108,4 +103,10 @@ h3 {
     padding-right: 30px;
     color: rgb(0, 0, 0);
     font-weight: 800;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
