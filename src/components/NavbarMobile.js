@@ -5,21 +5,21 @@ const NavbarMobile = ({ setIsOpen }) => {
         <>
           <ul>
             <li id='list-header'>RTS Solutions</li>
+            <NavLink to="/" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
             <li>
-              <NavLink to="/" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
                 Home
-              </NavLink>
             </li>
+            </NavLink>
+            <NavLink to="/projects" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
             <li>
-              <NavLink to="/projects" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
                 Projects
-              </NavLink>
             </li>
+            </NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
             <li>
-              <NavLink to="/contact" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
                 Contact
-              </NavLink>
             </li>
+            </NavLink>
           </ul>
             <button
                 className="close-button-mobile"

@@ -6,10 +6,9 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     access_key: "d9da6a0a-d340-4d4c-acfa-f1769089b37b",
-    lastName: "",
     firstName: "",
+    lastName: "",
     companyName: "",
-    billableAddress: "",
     phone: "",
     email: "",
     projectAddress: "",
@@ -36,10 +35,9 @@ const ContactForm = () => {
         setIsSubmitted(true); // or any success logic
         setFormData({
           access_key: "d9da6a0a-d340-4d4c-acfa-f1769089b37b",
-          lastName: "",
           firstName: "",
+          lastName: "",
           companyName: "",
-          billableAddress: "",
           phone: "",
           email: "",
           projectAddress: "",
@@ -67,13 +65,12 @@ const ContactForm = () => {
             value="d9da6a0a-d340-4d4c-acfa-f1769089b37b"
           ></input>
           {[
-            ["Last Name", "lastName"],
-            ["First Name", "firstName"],
+            ["First Name*", "firstName"],
+            ["Last Name*", "lastName"],
             ["Company Name", "companyName"],
-            ["Billable Address", "billableAddress"],
-            ["Phone", "phone"],
-            ["Email", "email"],
-            ["Project Address (if different)", "projectAddress"],
+            ["Phone*", "phone"],
+            ["Email*", "email"],
+            ["Project Address", "projectAddress"],
           ].map(([label, name]) => (
             <div key={name}>
               <label htmlFor={name} className="form-label">
@@ -86,9 +83,8 @@ const ContactForm = () => {
                 value={formData[name]}
                 onChange={handleChange}
                 required={[
-                  "lastName",
                   "firstName",
-                  "billableAddress",
+                  "lastName",
                   "phone",
                   "email",
                 ].includes(name)}

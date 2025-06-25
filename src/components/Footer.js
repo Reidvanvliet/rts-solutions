@@ -1,6 +1,7 @@
 import "../styles/footer.css";
 import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router";
+import ButtonMailto from "./ButtonMailto";
 
 const Footer = () => {
   return (
@@ -28,6 +29,7 @@ const Footer = () => {
         <div className="footer-section contact">
           <h3>Get in Touch</h3>
           {/*<p><FaPhoneAlt className="icon" /> (123) 456-7890</p>*/}
+          <ButtonMailto label="email me" mailto="mailto:no-reply@example.com" />
           <p><FaEnvelope className="icon" />RtsSolutions@gmail.com</p>
           <div className="footer-socials">
             <a href="https://www.facebook.com/rtssolutionsltd" target="_blank"><FaFacebookF />

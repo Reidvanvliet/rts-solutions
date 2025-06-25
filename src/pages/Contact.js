@@ -1,6 +1,5 @@
 import ContactBanner from "../components/contact/ContactBanner";
 import "../styles/contact.css";
-import { useState } from "react";
 import ContactForm from "../components/contact/ContactForm";
 
 const Contact = () => {
