@@ -4,6 +4,7 @@ import ProjectHighlights from "../components/home/ProjectHighlights";
 import About from "../components/home/About";
 import { projects } from "../data";
 import "../styles/home.css"
+import "../styles/projectHighlights.css"
 
 const Home = () => {
     return (

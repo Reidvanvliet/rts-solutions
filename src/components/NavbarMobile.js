@@ -10,9 +10,9 @@ const NavbarMobile = ({ setIsOpen }) => {
                 Home
             </li>
             </NavLink>
-            <NavLink to="/projects" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
+            <NavLink to="/gallery" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>
             <li>
-                Projects
+                Gallery
             </li>
             </NavLink>
             <NavLink to="/contact" className={({ isActive }) => isActive ? 'active-navlink-mobile' : 'navlink-mobile'}>

@@ -38,7 +38,7 @@ const Navbar = () => {
     <>
       <div className="main-nav-container">
         <div className="logo-container">
-          <h3>RTS Solutions</h3>
+          <img src={require('../media/images/RTSLogo.webp')} />
         </div>
 
         <div className="nav-container" id="nav-container">
@@ -55,12 +55,12 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/projects"
+                to="/gallery"
                 className={({ isActive }) =>
                   isActive ? "active-navlink" : "navlink"
                 }
               >
-                Projects
+                Gallery
               </NavLink>
             </li>
             <li>

@@ -15,12 +15,17 @@
     margin: 0 2%;
 }
 
-.title {
+.type {
     text-align: center;
-    margin-bottom: 65px;
     color: rgb(31, 31, 31);
 }
 
 .projects-container {
     margin-top: 5rem;
+}
+
+.title { 
+    text-align: center;
+    margin-bottom: 65px;
+    color: rgb(31, 31, 31);
 }
