@@ -11,7 +11,10 @@ const Home = () => {
         <>
             <HomeBanner />
             <About />
-            <ProjectHighlights images={projects[0].images} stars={projects[0].stars} projectBody={projects[0].projectBody} />
+            <div className="project-highlight-home">
+               <ProjectHighlights images={projects[0].images} stars={projects[0].stars} projectBody={projects[0].projectBody} /> 
+            </div>
+            
             <Process />
         </>
     )
