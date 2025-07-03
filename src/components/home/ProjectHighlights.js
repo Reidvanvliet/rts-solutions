@@ -65,7 +65,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
           ) : null}
           {projectBody}
         </div>
-        <Link to="/projects">
+        <Link to="/gallery">
           <button className={pathname === "/" ? "full-project" : "hidden"}>
             Visit Projects
           </button>
