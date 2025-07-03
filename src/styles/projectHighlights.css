@@ -23,7 +23,7 @@
     position: relative;
     overflow: hidden;
     width: 80%;
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(0, 0, 0);
     padding-bottom: 115px;
     border-bottom: 2px solid rgb(235, 235, 235);
 }
@@ -93,13 +93,13 @@
   opacity: 1;
   scale: 1;
   transform-origin: left center;
-    color: white;
+    color: rgb(0, 0, 0);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(235, 235, 235, 0.726);
     padding: 50px;
     line-height: 1.25;
     border-radius: 10px;
@@ -115,7 +115,7 @@
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.479);
+  color: rgb(31, 31, 31);
 }
 
 .close-testimonial:hover {
@@ -172,17 +172,16 @@
 
 @media only screen and (max-width: 700px) {
   .slideshow-container {
-    position: relative;
     width: 100%;
     border-radius: 0;
   }
 
-  .slideshow-image {
-    display: flex;
-    overflow: scroll;
+  .slideshow-container img {
+    height: auto;
+    width: 100%;
   }
 
-  .slideshow-image::-webkit-scrollbar {
+  /*.slideshow-image::-webkit-scrollbar {
     display: none;
-    }
+    }*/
 }
