@@ -11,7 +11,7 @@ const Process = () => {
             <ScrollAnimation divName="process-body" identifier="bodyOne" side="right">
               <h2 className="process-header">Let's Talk</h2>
               <p>
-                Have a project in mind? Whether it's a small-scale task or a large, complex project, we’re here to help. Contact our specialist to request an
+                Have a project in mind? Whether it's a small-scale task or a large, complex project, we’re here to help. Contact our team to request an
                 estimate.
               </p></ScrollAnimation>
           </div>
@@ -19,7 +19,7 @@ const Process = () => {
             <ScrollAnimation divName="process-body" identifier="bodyTwo" side="left">
               <h2 className="process-header">Share Your Vision</h2>
               <p>
-                Our specialist will come to your door and help you to create the
+                Our team will come to your door and help you to create the
                 perfect vision for your new space. We will keep budget in mind
                 as we build the perfect plan.
               </p>
@@ -41,9 +41,7 @@ const Process = () => {
              <ScrollAnimation divName="process-body" identifier="bodyFour" side="left">
               <h2 className="process-header">The Real Work</h2>
               <p>
-                This is where the work begins. You will not have use of your
-                space during this time and additional changes will be subject to
-                charges.
+                We'll be doing some heavy lifting—tearing things down, bringing materials in and out—so please make sure the area is clear and won’t be needed for a while. If you'd like to make any additional changes along the way, just let us know! Please note that extra work may come with additional charges.
               </p>
             </ScrollAnimation>
             <ScrollAnimation divName="list-number" identifier="numberFour" side="right">4</ScrollAnimation>
