@@ -16,11 +16,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .owner-figure {
     margin: 0 0 1.5rem 0;
+    text-align: center;
   }
 
   .owner-image {
@@ -44,7 +44,6 @@
   .owner-text {
     color: #444;
     max-width: 900px;
-    text-align: justify;
   }
 
   .owner-text p {
