@@ -185,4 +185,8 @@
     z-index: 2;
     overflow: hidden;
   }
+
+  .main-body {
+    margin-top: 0;
+  }
 }
