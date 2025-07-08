@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { useEffect, useDeferredValue } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,6 +10,7 @@ const ScrollAnimation = ({ children, identifier, side, divName }) => {
     gsap.to('.' + identifier, {
       transform: "translate(0, 0)", // Moves the section horizontally
       ease: "none",
+      immediateRender: false,
       scrollTrigger: {
         trigger: '.' + identifier,
         start: "top bottom",     // starts when top of section hits bottom of viewport
