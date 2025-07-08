@@ -6,6 +6,7 @@
   border-radius: 1.5rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   margin-bottom: 8rem;
+  max-height: 1200px;
 
   h2 {
     text-align: center;
