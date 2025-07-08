@@ -105,8 +105,9 @@
     line-height: 1.25;
     border-radius: 10px;
     max-width: 500px;
-    min-width: 225px;
+    min-width: 300px;
   transition: opacity 1.5s, scale 1s;
+  z-index: 3;
 }
 
 .close-testimonial {
@@ -184,5 +185,6 @@
 
   .testimonial {
     background-color: rgb(235, 235, 235);
+    padding: 50px 30px;
   }
 }
