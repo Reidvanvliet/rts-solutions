@@ -41,7 +41,7 @@ const Process = () => {
              <ScrollAnimation divName="process-body" identifier="bodyFour" side="left">
               <h2 className="process-header">The Real Work</h2>
               <p>
-                We'll be doing some heavy lifting—tearing things down, bringing materials in and out—so please make sure the area is clear and won’t be needed for a while. If you'd like to make any additional changes along the way, just let us know! Please note that extra work may come with additional charges.
+                We'll be doing some heavy lifting so please make sure the area is clear and won’t be needed for a while. If you'd like to make any additional changes, just let us know! Please note that extra work may come with additional charges.
               </p>
             </ScrollAnimation>
             <ScrollAnimation divName="list-number" identifier="numberFour" side="right">4</ScrollAnimation>
