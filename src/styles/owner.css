@@ -42,11 +42,9 @@
   }
 
   .owner-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
     color: #444;
     max-width: 900px;
-    text-align: left;
+    text-align: justify;
   }
 
   .owner-text p {

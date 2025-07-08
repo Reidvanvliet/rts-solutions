@@ -182,7 +182,7 @@
     width: 100%;
   }
 
-  /*.slideshow-image::-webkit-scrollbar {
-    display: none;
-    }*/
+  .testimonial {
+    background-color: rgb(235, 235, 235);
+  }
 }

@@ -23,10 +23,10 @@ const Owner = () => {
         After completing several home renovations for friends and family, Todd launched a new venture: RTS Solutions. What began as a passion turned into a full-time mission—helping homeowners transform their spaces with care, skill, and a personal touch.
       </p>
       <p>
-        Now, over a decade and countless projects later, Todd brings a wealth of renovation knowledge to every job. He’s built more than just homes—he’s built relationships in the community. Whether it’s helping a neighbour with a kitchen update or taking on a full-home remodel, Todd’s commitment remains the same: quality work, honest service, and spaces that feel like home.
+        Now Todd brings a wealth of renovation knowledge to every job. He’s built more than just homes—he’s built relationships in the community. Whether it’s helping a neighbour with a kitchen update or taking on a full-home remodel, Todd’s commitment remains the same: quality work, honest service, and spaces that feel like home.
       </p>
       <p>
-        At RTS Solutions, we treat every project like it's for family—because more often than not, it is.
+        At RTS Solutions, we treat every project like it's for family.
       </p>
     </div>
   </div>
