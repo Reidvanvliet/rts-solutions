@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# RTS Solutions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional renovation company website built with React for RTS Solutions. This multi-page site provides an overview of the business, showcases past projects, outlines renovation services, and allows visitors to get in touch via a contact form.
 
-## Available Scripts
+## 🏠 Project Overview
 
-In the project directory, you can run:
+This website was developed to help RTS Solutions highlight their renovation expertise and provide a convenient way for potential clients to reach out. It includes:
 
-### `npm start`
+- **Home Page**: A summary of the business, including a section about the owner and a breakdown of the renovation process.
+- **Gallery & Services Page**: A photo gallery of past projects and a list of available renovation services.
+- **Contact Page**: A contact form that sends emails directly to the owner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React, JavaScript, HTML, CSS
+- **Routing**: React Router
+- **Animations**: GSAP (GreenSock Animation Platform)
+- **Form Handling**: [Web3Forms](https://web3forms.com) (for sending form submissions via email)
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the project locally:
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Reidvanvliet/rts-solutions.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate into the project folder:
+   ```bash
+   cd rts-solutions
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+The app will be available at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🌐 Live Demo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Visit the live website here: [https://rtssolutions.netlify.app/](https://rtssolutions.netlify.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📬 Contact Form
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The contact form on the website uses Web3Forms to send formatted emails directly to the business owner, ensuring a smooth and secure communication channel.
 
-## Learn More
+## 📄 License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+All rights reserved to **RTS Solutions**. Unauthorized use or reproduction of the content is prohibited.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built with ❤️ by [Reid Vanvliet](https://github.com/Reidvanvliet)

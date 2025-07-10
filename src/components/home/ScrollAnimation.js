@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useDeferredValue } from "react";
+import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
