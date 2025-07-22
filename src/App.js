@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import { Helmet } from "react-helmet";
 
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
@@ -17,7 +18,13 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
 
 function App() {
   return (
-    <RouterProvider router={appRouter}/>
+    <div>
+      <Helmet>
+        <link rel="icon" href="../src/media/images/RTSLogo.ico"/>
+      </Helmet>
+      <RouterProvider router={appRouter}/>
+    </div>
+    
   );
 }
 
