@@ -17,7 +17,7 @@ const ScrollAnimation = ({ children, identifier, side, divName }) => {
           scrub: true,
         },
       });
-    }, 1000);
+    }, 2500);
   }, []);
 
   return <div className={`${divName} ${side} ${identifier}`}>{children}</div>;
