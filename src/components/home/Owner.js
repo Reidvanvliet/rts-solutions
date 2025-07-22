@@ -8,6 +8,7 @@ const Owner = () => {
         src={require('../../media/images/mr_mrs_smith.webp')}
         alt="Mr. and Mrs. Smith"
         className="owner-image"
+        loading="lazy"
       />
       <figcaption>
         <h3 className="owner-image-title">Todd Smith</h3>

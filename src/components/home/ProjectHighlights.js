@@ -22,7 +22,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
     <div className="project-gallery">
       <div className="slideshow-container">
         <div ref={scrollRef} className="slideshow-image">
-          <img src={images[currentIndex]} />
+          <img src={images[currentIndex]} loading="lazy" />
         </div>
 
         <button className="prev" onClick={() => goToPrevSlide()}>
@@ -41,6 +41,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
               }`}
               onClick={() => setCurrentIndex(index)}
               src={image}
+              loading="lazy"
             />
           ))}
         </div>
