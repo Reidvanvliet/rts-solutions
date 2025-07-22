@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <Helmet>
-        <link rel="icon" href="../src/media/images/RTSLogo.ico"/>
+        <link rel="icon" href="./media/images/RTSLogo.ico"/>
       </Helmet>
       <RouterProvider router={appRouter}/>
     </div>

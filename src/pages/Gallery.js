@@ -7,7 +7,6 @@ const Gallery = () => {
         <div>
             <GalleryBanner />
             <GalleryBody />
-            {/* Additional content for the Projects page can be added here */}
         </div>
     );
 }

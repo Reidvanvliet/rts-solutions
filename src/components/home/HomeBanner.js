@@ -15,7 +15,7 @@ const HomeBanner = () => {
         <div className="content-container">
             <h1>Inspired Renovations,<br/> Built for You</h1>
             <Link to="/contact">
-                <button className="get-started">
+                <button className="get-started" name="get-started">
                     Get Started
                 </button>
               </Link>

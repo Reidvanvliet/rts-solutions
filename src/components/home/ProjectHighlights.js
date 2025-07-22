@@ -22,7 +22,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
     <div className="project-gallery">
       <div className="slideshow-container">
         <div ref={scrollRef} className="slideshow-image">
-          <img src={images[currentIndex]} loading="lazy" />
+          <img src={images[currentIndex]} loading="lazy" alt="Project Image"/>
         </div>
 
         <button className="prev" onClick={() => goToPrevSlide()}>
@@ -42,6 +42,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
               onClick={() => setCurrentIndex(index)}
               src={image}
               loading="lazy"
+              alt="Project Image Selector"
             />
           ))}
         </div>
@@ -52,6 +53,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
           }
         >
           <button
+            name="close-testimonial"
             className="close-testimonial"
             onClick={() => setTestimonialOn(!testimonialOn)}
           >
