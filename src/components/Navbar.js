@@ -38,7 +38,7 @@ const Navbar = () => {
     <>
       <div className="main-nav-container">
         <div className="logo-container">
-          <img src={require('../media/images/RTSLogo.webp')} />
+          <img src={require('../media/images/RTSLogo.webp')} alt="RTS Logo" />
         </div>
 
         <div className="nav-container" id="nav-container">

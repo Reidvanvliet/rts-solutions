@@ -54,6 +54,7 @@ const ProjectHighlights = ({ images, stars, projectBody }) => {
         >
           <button
             name="close-testimonial"
+            aria-label="close testimonial"
             className="close-testimonial"
             onClick={() => setTestimonialOn(!testimonialOn)}
           >
